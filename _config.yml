@@ -1,17 +1,17 @@
 # change the followings to match your Github username and repo name
-baseurl: "/tailpages" # the name of your github repo
-url: "https://harrywang.github.io" # the url of your github pages
+baseurl: "/website" # the name of your github repo
+url: "https://joesalowitz.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+title: "Joe Salowitz | CXO at Lead Scout"
+description: Joe Salowitz is the co-founder and head of product design and strategy at Lead Scout. Over 15 years of experience bringing products to market.
 
 # color theme for links
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
+author: Joe Salowitz
+author-bio: CXO at Lead Scout  # change to false to hide
 author-image: 279.png  # file must be in the /assets/img/ folder
 
 # navigation menu
