@@ -2,19 +2,96 @@
 layout: default
 ---
 {% if site.show-nav-menu %}
-  {% include nav.html%}
+{% include nav.html%}
 {% endif %}
 
-<div class="home mx-auto text-center prose prose-{{site.theme-color}}">
-  <div>
+<div class="home mx-auto text-left prose prose-{{site.theme-color}}">
+  <div class="text-center">
     <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
       alt="author profile image">
-    <h1>{{site.author}}</h1>
+    <!-- <h1>{{site.author}}</h1> -->
   </div>
-  {% if site.author-bio %}
+  <!-- {% if site.author-bio %}
   <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
-  {% endif %}
-</div>
+  {% endif %} -->
+  
+
+  {% contentblock home-headline %}
+  <div class="container--tabs w-full grid grid-cols-5 gap-6">
+    
+    <div class="row col-span-1 mt-4">
+      <ul class="nav nav-tabs text-sm text-left font-medium">
+        <li class="active inline p-0"><a href="#tab-1">Full</a><span>&nbsp;or&nbsp;</span></li>
+        <li class=" inline p-0"><a href="#tab-2">Summary</a></li>
+      </ul>
+    </div>
+
+    <section class="row grid col-span-4">
+
+      <div class="tab-content">
+        <div id="tab-1" class="tab-pane active col-span-2"> 
+          <span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+          <span class="col-md-10">
+            {% contentblock long-summary %}
+
+            <span class="myTooltip text-green-500 cursor-pointer" title="Hi there!"> Hover me for a tooltip </span>
+          </span>
+        </div> 
+        <div id="tab-2" class="tab-pane col-span-2">
+          <span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+          <span class="col-md-10">
+            {% contentblock short-summary %}
+          </span>
+        </div>
+      </div>
+    </section>
+      <div class="w-full col-start-2 col-span-2">{% capture my_include %}{% include teaching.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+      </div>
+      
+      <div class="w-full col-span-2">
+        {% capture my_include %}{% include speaking.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+      </div>
+
+      <div class="w-full col-start-2 col-span-4">
+        {% contentblock community-support %}
+      </div>
+
+      <div class="w-full col-start-2 col-span-4">
+        {% contentblock teaching-mentorship %}
+      </div>
+
+      <div class="w-full col-start-2 col-span-4">
+        {% contentblock speaking %}
+      </div>
+
+      <div class="w-full col-start-2 col-span-1 text-sm leading-5">
+        {% contentblock teaching %}
+      </div>
+
+      <div class="w-full col-span-1 text-sm leading-5">
+        {% contentblock publications %}
+      </div>
+
+      <div class="w-full col-span-2 text-sm leading-5">
+        {% contentblock recognition %}
+      </div>
+
+      <div class="w-full col-start-2 col-span-4">
+        {% contentblock community-support %}
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
 </div>
 
 {% include social-media.html %}

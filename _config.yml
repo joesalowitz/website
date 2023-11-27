@@ -20,27 +20,27 @@ show-nav-menu: true
 nav-menu:
 - text: About
   permalink: about
-- text: Bitcoin
-  permalink: bitcoin
-- text: Blog
-  permalink: blog
+- text: Work
+  permalink: makes
+- text: Writing
+  permalink: writes
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
-medium: false
+twitter: https://twitter.com/joesalowitz
+facebook: https://facebook.com/joesalowitz
+instagram: https://instagram.com/jsalowitz
+github: https://github.com/joesalowitz
+linkedin: https://linkedin.com/in/joesalowitz
+medium: https://medium.com/joesalowitz
 google-scholar: false
 email: false
 
 # footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
+footer-msg: "*Designer stuff* This site was built with this and that and the other thing. Tailwind, Jekyll, Visual Studio, Markdown, Github, etc."
+footer-msg-link: /
 
 # google analytics
-google-analytics: G-WCRC1TC2V5
+google-analytics: G-1231231234
 
 # jekyll plugins - no need to change
 plugins:
