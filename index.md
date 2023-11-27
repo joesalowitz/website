@@ -6,7 +6,7 @@ permalink: /
 
 ## Hello, I'm <span style="color:green">Joe Salowitz</span>, CXO at Lead Scout. I've spent 15 years bringing products to market, both big and small.
 
-Full // Summary
+Full /// Summary
 
 I’m co-founder and head of product at Lead Scout. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
 
