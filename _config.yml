@@ -45,3 +45,4 @@ google-analytics: G-1231231234
 # jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+    - jekyll-contentblocks
