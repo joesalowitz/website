@@ -40,7 +40,7 @@ footer-msg: "*Designer stuff* This site was built with this and that and the oth
 footer-msg-link: /
 
 # google analytics
-google-analytics: G-1231231234
+google-analytics: G-12312312345
 
 # jekyll plugins - no need to change
 plugins:
